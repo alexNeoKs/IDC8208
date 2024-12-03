@@ -1,0 +1,112 @@
+[
+    {
+        "query": "What is supervised learning?",
+        "answer": "Supervised learning is a machine learning approach where models are trained using labeled data to map inputs to outputs.",
+        "context": "Supervised learning relies on a dataset that includes input-output pairs, allowing models to learn from labeled examples."
+    },
+    {
+        "query": "What is reinforcement learning?",
+        "answer": "Reinforcement learning is a machine learning paradigm where an agent learns by interacting with an environment and receiving rewards for desired actions.",
+        "context": "Reinforcement learning trains agents through trial-and-error to maximize cumulative rewards over time."
+    },
+    {
+        "query": "What is the importance of activation functions in neural networks?",
+        "answer": "Activation functions introduce non-linearity into neural networks, enabling them to learn and represent complex patterns in data.",
+        "context": "Common activation functions include ReLU, sigmoid, and tanh, which help in feature transformation."
+    },
+    {
+        "query": "What is overfitting in machine learning?",
+        "answer": "Overfitting occurs when a machine learning model learns the training data too well, including noise, and performs poorly on unseen data.",
+        "context": "Overfitting can be mitigated by techniques like cross-validation, regularization, and using more data."
+    },
+    {
+        "query": "What is the role of dropout in neural networks?",
+        "answer": "Dropout is a regularization technique in neural networks that prevents overfitting by randomly disabling neurons during training.",
+        "context": "By introducing randomness, dropout ensures that the network learns robust features that generalize well to unseen data."
+    },
+    {
+        "query": "What is transfer learning?",
+        "answer": "Transfer learning leverages pre-trained models to solve new but related tasks, often requiring less labeled data for training.",
+        "context": "Pre-trained models like BERT or ResNet can be fine-tuned for specific applications, saving time and resources."
+    },
+    {
+        "query": "What is the difference between machine learning and deep learning?",
+        "answer": "Machine learning focuses on algorithms for predictive modeling, while deep learning uses neural networks with multiple layers to learn representations.",
+        "context": "Deep learning is a subset of machine learning, excelling in tasks like image recognition and natural language processing."
+    },
+    {
+        "query": "How do convolutional neural networks work?",
+        "answer": "Convolutional neural networks (CNNs) use convolutional layers to detect spatial patterns in data, such as edges and textures in images.",
+        "context": "CNNs process data through layers of convolutions, pooling, and fully connected layers for tasks like image classification."
+    },
+    {
+        "query": "What is a transformer in natural language processing?",
+        "answer": "Transformers are deep learning architectures that rely on self-attention mechanisms to process sequences in parallel for tasks like translation and summarization.",
+        "context": "The transformer architecture powers models like GPT and BERT, enabling efficient context-aware language understanding."
+    },
+    {
+        "query": "What are generative adversarial networks?",
+        "answer": "Generative adversarial networks (GANs) consist of a generator and a discriminator working together to generate realistic data.",
+        "context": "GANs are used for image synthesis, data augmentation, and other tasks requiring realistic data generation."
+    },
+    {
+        "query": "What does this image depict?",
+        "answer": "The image depicts a neural network architecture with input, hidden, and output layers.",
+        "context": "Neural network diagrams illustrate the flow of data through connected layers.",
+        "image_reference": "neural_network_diagram.png"
+    },
+    {
+        "query": "What trend does this graph show?",
+        "answer": "The graph shows an upward trend in accuracy over epochs, indicating model improvement during training.",
+        "context": "Accuracy typically improves as a model learns from data unless it begins overfitting.",
+        "image_reference": "training_accuracy_graph.png"
+    },
+    {
+        "query": "What is visualized in this heatmap?",
+        "answer": "The heatmap shows feature importance, with brighter areas indicating significant influence on the model's decision.",
+        "context": "Heatmaps are used in interpretability to visualize regions most relevant to predictions.",
+        "image_reference": "model_heatmap.png"
+    },
+    {
+        "query": "What does this confusion matrix illustrate?",
+        "answer": "The confusion matrix highlights the classification model's performance, showing true positives and false negatives.",
+        "context": "Confusion matrices are tools to evaluate classification accuracy and errors.",
+        "image_reference": "confusion_matrix_example.png"
+    },
+    {
+        "query": "What does this clustering diagram show?",
+        "answer": "The clustering diagram groups similar data points together, suggesting distinct patterns or categories.",
+        "context": "Clustering algorithms like K-means partition data into clusters based on feature similarity.",
+        "image_reference": "clustering_diagram.png"
+    },
+    {
+        "query": "What does this activation function plot show?",
+        "answer": "The plot shows the ReLU activation function, which outputs the input if positive and zero otherwise.",
+        "context": "ReLU is commonly used in deep learning for its simplicity and efficiency.",
+        "image_reference": "relu_plot.png"
+    },
+    {
+        "query": "What is shown in this classification result?",
+        "answer": "The image classification result shows an object correctly labeled as 'cat' with a confidence score of 95%.",
+        "context": "Image classification outputs predicted labels and confidence scores for detected objects.",
+        "image_reference": "classification_result.png"
+    },
+    {
+        "query": "What does this data distribution chart represent?",
+        "answer": "The chart represents a normal distribution, with most values centered around the mean.",
+        "context": "Distribution charts help identify trends and variability in data.",
+        "image_reference": "data_distribution_chart.png"
+    },
+    {
+        "query": "What can be inferred from this training curve?",
+        "answer": "The training curve shows loss decreasing over time, indicating that the model is learning effectively.",
+        "context": "Training curves are used to monitor model performance and detect overfitting or underfitting.",
+        "image_reference": "training_loss_curve.png"
+    },
+    {
+        "query": "What does this scatter plot visualize?",
+        "answer": "The scatter plot visualizes the relationship between two variables, showing a positive correlation.",
+        "context": "Scatter plots are used to identify trends and correlations between features in data.",
+        "image_reference": "scatter_plot_example.png"
+    }
+]

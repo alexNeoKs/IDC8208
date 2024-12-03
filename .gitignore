@@ -1,1 +1,3 @@
 /models/*
+/source_old/*
+/faiss_index/*

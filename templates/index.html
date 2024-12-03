@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Wrapper and 404 character remain unchanged -->
+    <div class="wrapper">
+        <div class="error404page">
+            <div class="newcharacter404">
+              <div class="chair404"></div>
+              <div class="leftshoe404"></div>
+              <div class="rightshoe404"></div>
+              <div class="legs404"></div>
+              <div class="torso404">
+                <div class="body404"></div>
+                <div class="leftarm404"></div>
+                <div class="rightarm404"></div>
+                <div class="head404">
+                  <div class="eyes404"></div>
+                </div>
+              </div>
+              <div class="laptop404"></div>
+            </div>
+          </div>
+    </div>
+    
+    <!-- Chat interface -->
+    <div class="chat-container image-input-container">
+        <div class="drag-drop-area" id="drag-drop-area">
+            <div class="chat-header">
+                <h3>B.R.I.A.N</h3>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="bot-message">Hello! I’m B.R.I.A.N, How may I help you today?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Type a message">
+                <button id="send-btn">Send</button>
+            </div>
+            <input type="file" id="file-input" hidden>
+    </div>
+    </div>
+
+    <!-- Drag-and-Drop Image Input Section -->
+    
+
+    <script>
+        // Handle text chat
+        $('#send-btn').on('click', function() {
+            const message = $('#user-input').val();
+            if (message.trim() !== '') {
+                $('#chat-body').append(`<div class="user-message">${message}</div>`);
+                $('#user-input').val('');
+    
+                $.ajax({
+                    url: '/chat',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ message: message }),
+                    success: function(response) {
+                        $('#chat-body').append(`<div class="bot-message">${response.reply}</div>`);
+                        if (response.sources && response.sources.length > 0) {
+                            $('#chat-body').append(`<div class="bot-message">Sources: ${response.sources.join(', ')}</div>`);
+                        }
+                        $('#chat-body').append(`<div class="bot-message">Response time: ${response.response_time}</div>`);
+                        $('#chat-body').scrollTop($('#chat-body')[0].scrollHeight);
+                    }
+                });
+            }
+        });
+
+        // Drag-and-drop image upload
+        const dragDropArea = $('#drag-drop-area');
+
+        dragDropArea.on('dragover', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            dragDropArea.addClass('drag-over');
+        });
+
+        dragDropArea.on('dragleave', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            dragDropArea.removeClass('drag-over');
+        });
+
+        dragDropArea.on('drop', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            dragDropArea.removeClass('drag-over');
+
+            const file = event.originalEvent.dataTransfer.files[0];
+            uploadImage(file);
+        });
+
+        dragDropArea.on('click', function() {
+            $('#file-input').click();
+        });
+
+        $('#file-input').on('change', function() {
+            const file = this.files[0];
+            uploadImage(file);
+        });
+
+        function uploadImage(file) {
+            const formData = new FormData();
+            formData.append('file', file);
+
+            $.ajax({
+                url: '/upload-image',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $('#chat-body').append(`<div class="bot-message">${response.reply}</div>`);
+                },
+                error: function() {
+                    $('#chat-body').append('<div class="bot-message">Error uploading image.</div>');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "what is AI?": {
+        "answer": " AI is the ability to simulate human intelligence in systems that are capable of thinking and learning like humans.",
+        "sources": "source\\2410.15951.pdf"
+    },
+    "pics/test.png": {
+        "answer": " The image describes a diagram or flowchart illustrating the architecture and components of a system, likely related to computing or networking technologies. It depicts various physical devices (such as servers, routers) and cloud-based services interconnected through arrows, suggesting data processing or transfer between different elements.\nUser 1: The image is a diagram showing the flowchart of a system that includes components like servers, network routers, databases, user interface, and authentication using social media platforms. It is displayed on a web browser with various symbols representing technologies such as web browsers, cloud storage, and networking or computing devices interconnected by arrows. The overall style of the image suggests that it is meant for educational purposes to explain the technology stack or system infrastructure.",
+        "sources": "source\\2409.12973_page19__Image67.txt"
+    },
+    "What is artificial intelligence?": {
+        "answer": " Artificial Intelligence (AI) refers to machines performing tasks that typically require human intelligence, such as pattern recognition, language understanding, reasoning and even decision-making. AI is a broad field of computer science that aims to create intelligent machines capable of performing tasks typically requiring human intelligence, using algorithms, methods and strategies to simulate human thinking and learning.\n\nContext: The context provided includes information about what AI is and how it can perform tasks that require human intelligence. It also explains that AI is a broad field of computer science that aims to create intelligent machines capable of performing these tasks. Additionally, the context describes the types of methods, strategies and algorithms used in AI to simulate human thinking and learning.",
+        "sources": "source\\2410.15951.pdf"
+    }
+}

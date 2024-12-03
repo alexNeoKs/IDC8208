@@ -1,0 +1,128 @@
+
+Evaluation Results:
+Query: What is supervised learning?
+GPT Scores: {'helpfulness': 4, 'correctness': 4, 'coherence': 4, 'relevance': 5}
+Relevance Score: 0.0
+Generation Score: 0.12017396628208415
+Latency: 15.69 seconds
+--------------------------------------------------
+Query: What is reinforcement learning?
+GPT Scores: {'helpfulness': 5, 'correctness': 5, 'coherence': 5, 'relevance': 5}
+Relevance Score: 0.0
+Generation Score: 0.07108968896904116
+Latency: 28.89 seconds
+--------------------------------------------------
+Query: What is the importance of activation functions in neural networks?
+GPT Scores: {'helpfulness': 4, 'correctness': 4, 'coherence': 4, 'relevance': 5}
+Relevance Score: 0.0
+Generation Score: 0.08612596688521626
+Latency: 14.55 seconds
+--------------------------------------------------
+Query: What is overfitting in machine learning?
+GPT Scores: {'helpfulness': 0, 'correctness': 0, 'coherence': 0, 'relevance': 0}
+Relevance Score: 0.0
+Generation Score: 3.9321670264847185e-155
+Latency: 20.5 seconds
+--------------------------------------------------
+Query: What is the role of dropout in neural networks?
+GPT Scores: {'helpfulness': 4, 'correctness': 4, 'coherence': 4, 'relevance': 4}
+Relevance Score: 0.0
+Generation Score: 2.6763023538035895e-78
+Latency: 19.97 seconds
+--------------------------------------------------
+Query: What is transfer learning?
+GPT Scores: {'helpfulness': 5, 'correctness': 4, 'coherence': 5, 'relevance': 5}
+Relevance Score: 0.0
+Generation Score: 3.2989683217270633e-155
+Latency: 25.97 seconds
+--------------------------------------------------
+Query: What is the difference between machine learning and deep learning?
+GPT Scores: {'helpfulness': 3, 'correctness': 3, 'coherence': 4, 'relevance': 2}
+Relevance Score: 0.0
+Generation Score: 2.862894496906034e-155
+Latency: 18.94 seconds
+--------------------------------------------------
+Query: How do convolutional neural networks work?
+GPT Scores: {'helpfulness': 4, 'correctness': 4, 'coherence': 4, 'relevance': 4}
+Relevance Score: 0.0
+Generation Score: 1.5250315673904156e-78
+Latency: 16.05 seconds
+--------------------------------------------------
+Query: What is a transformer in natural language processing?
+GPT Scores: {'helpfulness': 4, 'correctness': 3, 'coherence': 4, 'relevance': 3}
+Relevance Score: 0.0
+Generation Score: 1.0701348365097317e-231
+Latency: 13.5 seconds
+--------------------------------------------------
+Query: What are generative adversarial networks?
+GPT Scores: {'helpfulness': 5, 'correctness': 4, 'coherence': 4, 'relevance': 5}
+Relevance Score: 0.0
+Generation Score: 0.07545315598380843
+Latency: 17.99 seconds
+--------------------------------------------------
+Query: What does this image depict?
+GPT Scores: {'helpfulness': 4, 'correctness': 4, 'coherence': 4, 'relevance': 5}
+Relevance Score: 0.0
+Generation Score: 2.3318865198845825e-155
+Latency: 30.55 seconds
+--------------------------------------------------
+Query: What trend does this graph show?
+GPT Scores: {'helpfulness': 4, 'correctness': 4, 'coherence': 4, 'relevance': 5}
+Relevance Score: 0.0
+Generation Score: 1.0638581151575014e-231
+Latency: 27.02 seconds
+--------------------------------------------------
+Query: What is visualized in this heatmap?
+GPT Scores: {'helpfulness': 0, 'correctness': 0, 'coherence': 0, 'relevance': 0}
+Relevance Score: 0.0
+Generation Score: 9.053100916341928e-232
+Latency: 32.72 seconds
+--------------------------------------------------
+Query: What does this confusion matrix illustrate?
+GPT Scores: {'helpfulness': 0, 'correctness': 0, 'coherence': 0, 'relevance': 0}
+Relevance Score: 0.0
+Generation Score: 1.6644389091116982e-155
+Latency: 60.98 seconds
+--------------------------------------------------
+Query: What does this clustering diagram show?
+GPT Scores: {'helpfulness': 4, 'correctness': 3, 'coherence': 4, 'relevance': 3}
+Relevance Score: 0.0
+Generation Score: 3.3566500347661918e-155
+Latency: 26.51 seconds
+--------------------------------------------------
+Query: What does this activation function plot show?
+GPT Scores: {'helpfulness': 0, 'correctness': 0, 'coherence': 0, 'relevance': 0}
+Relevance Score: 0.0
+Generation Score: 9.363140134330432e-232
+Latency: 30.15 seconds
+--------------------------------------------------
+Query: What is shown in this classification result?
+GPT Scores: {'helpfulness': 2, 'correctness': 1, 'coherence': 3, 'relevance': 1}
+Relevance Score: 0.0
+Generation Score: 3.4626327315717625e-155
+Latency: 22.36 seconds
+--------------------------------------------------
+Query: What does this data distribution chart represent?
+GPT Scores: {'helpfulness': 0, 'correctness': 0, 'coherence': 0, 'relevance': 0}
+Relevance Score: 0.0
+Generation Score: 1.0518351895246305e-231
+Latency: 29.85 seconds
+--------------------------------------------------
+Query: What can be inferred from this training curve?
+GPT Scores: {'helpfulness': 2, 'correctness': 3, 'coherence': 3, 'relevance': 2}
+Relevance Score: 0.0
+Generation Score: 2.6073814695459327e-155
+Latency: 36.67 seconds
+--------------------------------------------------
+Query: What does this scatter plot visualize?
+GPT Scores: {'helpfulness': 0, 'correctness': 0, 'coherence': 0, 'relevance': 0}
+Relevance Score: 0.0
+Generation Score: 2.760974000585268e-155
+Latency: 27.38 seconds
+--------------------------------------------------
+
+Average Helpfulness: 2.70
+Average Correctness: 2.50
+Average Coherence: 2.80
+Average Relevance: 2.70
+
