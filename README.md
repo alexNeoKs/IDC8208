@@ -34,7 +34,7 @@ Its heavily recommended you create a virtual environment to run this project.
 Clone repo and install dependencies
 
 ```bash
-    git clone https://github.com/13331112522/m-rag.git
+    git clone https://github.com/alexNeoKs/IDC8208.git
     python -m pip install -r requirements.txt
     cp example.env .env #Create a copy of the environ file
 ```
